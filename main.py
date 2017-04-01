@@ -16,6 +16,10 @@ def callback(t):
         sleep(1)
         ampel.auto_gruen()
 
+ampel.init()
+sleep(1)
 ampel.auto_rot()
+sleep(1)
+ampel.fuss_gruen()
 tim = Timer(-1)
 tim.init(period=10000, mode=Timer.PERIODIC, callback=callback)
